@@ -11,23 +11,11 @@ import SwiftUI
 struct ARModelView: View {
     @EnvironmentObject var appStatus: AppStatus
     var randomCard: String = ""
-    var modelName: String
-    var modelExtension: String
-    
-    init(modelName: String, modelExtension: String){
-        self.modelExtension = modelExtension
-        
-        if modelName == "apple_event_en_"{
-            randomCard = String(Int.random(in: 1..<27))
-        }
-        self.modelName = modelName + randomCard
-    }
     
     var body: some View {
         ZStack{
-            ARQuickLookView(
-                name: modelName,
-                modelExtension: modelExtension)
+            ARQuickLookView()
+                .environmentObject(appStatus)
             
             Button(action: {
                 appStatus.toShowARModel.toggle()
@@ -42,7 +30,7 @@ struct ARModelView: View {
 
 struct ARModelView_Previews: PreviewProvider {
     static var previews: some View {
-        ARModelView(modelName: "apple_event_22_3_8",
-                    modelExtension: "reality")
+        ARModelView()
+        .environmentObject(AppStatus())
     }
 }

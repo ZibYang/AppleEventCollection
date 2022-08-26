@@ -20,6 +20,39 @@
 		5A9D933E28B8DF0100BF05E5 /* ADAEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D933D28B8DF0100BF05E5 /* ADAEventList.swift */; };
 		5A9D934028B8DF9100BF05E5 /* WWDCEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D933F28B8DF9100BF05E5 /* WWDCEventList.swift */; };
 		5A9D934228B8DFBE00BF05E5 /* AppleEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D934128B8DFBE00BF05E5 /* AppleEventList.swift */; };
+		5A9D936628B8E45E00BF05E5 /* apple_event_20_11_10.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934428B8E45E00BF05E5 /* apple_event_20_11_10.usdz */; };
+		5A9D936728B8E45E00BF05E5 /* apple_event_22_3_8.reality in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934528B8E45E00BF05E5 /* apple_event_22_3_8.reality */; };
+		5A9D936828B8E45E00BF05E5 /* apple_event_21_9_14.reality in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934628B8E45E00BF05E5 /* apple_event_21_9_14.reality */; };
+		5A9D936928B8E45E00BF05E5 /* apple_event_20_9_15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934728B8E45E00BF05E5 /* apple_event_20_9_15.usdz */; };
+		5A9D936A28B8E45E00BF05E5 /* apple_event_20_10_13.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934828B8E45E00BF05E5 /* apple_event_20_10_13.usdz */; };
+		5A9D936B28B8E45E00BF05E5 /* apple_event_22_9_7.reality in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934928B8E45E00BF05E5 /* apple_event_22_9_7.reality */; };
+		5A9D936C28B8E45E00BF05E5 /* apple_event_en_26.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934B28B8E45E00BF05E5 /* apple_event_en_26.usdz */; };
+		5A9D936D28B8E45E00BF05E5 /* apple_event_en_8.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934C28B8E45E00BF05E5 /* apple_event_en_8.usdz */; };
+		5A9D936E28B8E45E00BF05E5 /* apple_event_en_10.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934D28B8E45E00BF05E5 /* apple_event_en_10.usdz */; };
+		5A9D936F28B8E45E00BF05E5 /* apple_event_en_4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934E28B8E45E00BF05E5 /* apple_event_en_4.usdz */; };
+		5A9D937028B8E45E00BF05E5 /* apple_event_en_5.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D934F28B8E45E00BF05E5 /* apple_event_en_5.usdz */; };
+		5A9D937128B8E45E00BF05E5 /* apple_event_en_11.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935028B8E45E00BF05E5 /* apple_event_en_11.usdz */; };
+		5A9D937228B8E45E00BF05E5 /* apple_event_en_9.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935128B8E45E00BF05E5 /* apple_event_en_9.usdz */; };
+		5A9D937328B8E45E00BF05E5 /* apple_event_en_16.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935228B8E45E00BF05E5 /* apple_event_en_16.usdz */; };
+		5A9D937428B8E45E00BF05E5 /* apple_event_en_2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935328B8E45E00BF05E5 /* apple_event_en_2.usdz */; };
+		5A9D937528B8E45E00BF05E5 /* apple_event_en_20.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935428B8E45E00BF05E5 /* apple_event_en_20.usdz */; };
+		5A9D937628B8E45E00BF05E5 /* apple_event_en_21.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935528B8E45E00BF05E5 /* apple_event_en_21.usdz */; };
+		5A9D937728B8E45E00BF05E5 /* apple_event_en_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935628B8E45E00BF05E5 /* apple_event_en_3.usdz */; };
+		5A9D937828B8E45E00BF05E5 /* apple_event_en_17.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935728B8E45E00BF05E5 /* apple_event_en_17.usdz */; };
+		5A9D937928B8E45E00BF05E5 /* apple_event_en_22.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935828B8E45E00BF05E5 /* apple_event_en_22.usdz */; };
+		5A9D937A28B8E45E00BF05E5 /* apple_event_en_18.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935928B8E45E00BF05E5 /* apple_event_en_18.usdz */; };
+		5A9D937B28B8E45E00BF05E5 /* apple_event_en_19.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935A28B8E45E00BF05E5 /* apple_event_en_19.usdz */; };
+		5A9D937C28B8E45E00BF05E5 /* apple_event_en_23.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935B28B8E45E00BF05E5 /* apple_event_en_23.usdz */; };
+		5A9D937D28B8E45E00BF05E5 /* apple_event_en_15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935C28B8E45E00BF05E5 /* apple_event_en_15.usdz */; };
+		5A9D937E28B8E45E00BF05E5 /* apple_event_en_1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935D28B8E45E00BF05E5 /* apple_event_en_1.usdz */; };
+		5A9D937F28B8E45E00BF05E5 /* apple_event_en_24.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935E28B8E45E00BF05E5 /* apple_event_en_24.usdz */; };
+		5A9D938028B8E45E00BF05E5 /* apple_event_en_6.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D935F28B8E45E00BF05E5 /* apple_event_en_6.usdz */; };
+		5A9D938128B8E45E00BF05E5 /* apple_event_en_12.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936028B8E45E00BF05E5 /* apple_event_en_12.usdz */; };
+		5A9D938228B8E45E00BF05E5 /* apple_event_en_13.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936128B8E45E00BF05E5 /* apple_event_en_13.usdz */; };
+		5A9D938328B8E45E00BF05E5 /* apple_event_en_7.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936228B8E45E00BF05E5 /* apple_event_en_7.usdz */; };
+		5A9D938428B8E45E00BF05E5 /* apple_event_en_25.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936328B8E45E00BF05E5 /* apple_event_en_25.usdz */; };
+		5A9D938528B8E45E00BF05E5 /* apple_event_21_10_18.reality in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936428B8E45E00BF05E5 /* apple_event_21_10_18.reality */; };
+		5A9D938628B8E45E00BF05E5 /* apple_event_21_4_20.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936528B8E45E00BF05E5 /* apple_event_21_4_20.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +70,39 @@
 		5A9D933D28B8DF0100BF05E5 /* ADAEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADAEventList.swift; sourceTree = "<group>"; };
 		5A9D933F28B8DF9100BF05E5 /* WWDCEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCEventList.swift; sourceTree = "<group>"; };
 		5A9D934128B8DFBE00BF05E5 /* AppleEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleEventList.swift; sourceTree = "<group>"; };
+		5A9D934428B8E45E00BF05E5 /* apple_event_20_11_10.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_20_11_10.usdz; sourceTree = "<group>"; };
+		5A9D934528B8E45E00BF05E5 /* apple_event_22_3_8.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_event_22_3_8.reality; sourceTree = "<group>"; };
+		5A9D934628B8E45E00BF05E5 /* apple_event_21_9_14.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_event_21_9_14.reality; sourceTree = "<group>"; };
+		5A9D934728B8E45E00BF05E5 /* apple_event_20_9_15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_20_9_15.usdz; sourceTree = "<group>"; };
+		5A9D934828B8E45E00BF05E5 /* apple_event_20_10_13.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_20_10_13.usdz; sourceTree = "<group>"; };
+		5A9D934928B8E45E00BF05E5 /* apple_event_22_9_7.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_event_22_9_7.reality; sourceTree = "<group>"; };
+		5A9D934B28B8E45E00BF05E5 /* apple_event_en_26.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_26.usdz; sourceTree = "<group>"; };
+		5A9D934C28B8E45E00BF05E5 /* apple_event_en_8.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_8.usdz; sourceTree = "<group>"; };
+		5A9D934D28B8E45E00BF05E5 /* apple_event_en_10.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_10.usdz; sourceTree = "<group>"; };
+		5A9D934E28B8E45E00BF05E5 /* apple_event_en_4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_4.usdz; sourceTree = "<group>"; };
+		5A9D934F28B8E45E00BF05E5 /* apple_event_en_5.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_5.usdz; sourceTree = "<group>"; };
+		5A9D935028B8E45E00BF05E5 /* apple_event_en_11.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_11.usdz; sourceTree = "<group>"; };
+		5A9D935128B8E45E00BF05E5 /* apple_event_en_9.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_9.usdz; sourceTree = "<group>"; };
+		5A9D935228B8E45E00BF05E5 /* apple_event_en_16.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_16.usdz; sourceTree = "<group>"; };
+		5A9D935328B8E45E00BF05E5 /* apple_event_en_2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_2.usdz; sourceTree = "<group>"; };
+		5A9D935428B8E45E00BF05E5 /* apple_event_en_20.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_20.usdz; sourceTree = "<group>"; };
+		5A9D935528B8E45E00BF05E5 /* apple_event_en_21.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_21.usdz; sourceTree = "<group>"; };
+		5A9D935628B8E45E00BF05E5 /* apple_event_en_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_3.usdz; sourceTree = "<group>"; };
+		5A9D935728B8E45E00BF05E5 /* apple_event_en_17.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_17.usdz; sourceTree = "<group>"; };
+		5A9D935828B8E45E00BF05E5 /* apple_event_en_22.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_22.usdz; sourceTree = "<group>"; };
+		5A9D935928B8E45E00BF05E5 /* apple_event_en_18.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_18.usdz; sourceTree = "<group>"; };
+		5A9D935A28B8E45E00BF05E5 /* apple_event_en_19.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_19.usdz; sourceTree = "<group>"; };
+		5A9D935B28B8E45E00BF05E5 /* apple_event_en_23.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_23.usdz; sourceTree = "<group>"; };
+		5A9D935C28B8E45E00BF05E5 /* apple_event_en_15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_15.usdz; sourceTree = "<group>"; };
+		5A9D935D28B8E45E00BF05E5 /* apple_event_en_1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_1.usdz; sourceTree = "<group>"; };
+		5A9D935E28B8E45E00BF05E5 /* apple_event_en_24.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_24.usdz; sourceTree = "<group>"; };
+		5A9D935F28B8E45E00BF05E5 /* apple_event_en_6.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_6.usdz; sourceTree = "<group>"; };
+		5A9D936028B8E45E00BF05E5 /* apple_event_en_12.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_12.usdz; sourceTree = "<group>"; };
+		5A9D936128B8E45E00BF05E5 /* apple_event_en_13.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_13.usdz; sourceTree = "<group>"; };
+		5A9D936228B8E45E00BF05E5 /* apple_event_en_7.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_7.usdz; sourceTree = "<group>"; };
+		5A9D936328B8E45E00BF05E5 /* apple_event_en_25.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_25.usdz; sourceTree = "<group>"; };
+		5A9D936428B8E45E00BF05E5 /* apple_event_21_10_18.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_event_21_10_18.reality; sourceTree = "<group>"; };
+		5A9D936528B8E45E00BF05E5 /* apple_event_21_4_20.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_21_4_20.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +119,7 @@
 		5A9D931428B8D8D500BF05E5 = {
 			isa = PBXGroup;
 			children = (
+				5A9D934328B8E45E00BF05E5 /* AppleEvent */,
 				5A9D931F28B8D8D500BF05E5 /* AppleEventCollection */,
 				5A9D931E28B8D8D500BF05E5 /* Products */,
 			);
@@ -118,6 +185,54 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		5A9D934328B8E45E00BF05E5 /* AppleEvent */ = {
+			isa = PBXGroup;
+			children = (
+				5A9D934A28B8E45E00BF05E5 /* wwdc22 */,
+				5A9D934428B8E45E00BF05E5 /* apple_event_20_11_10.usdz */,
+				5A9D934528B8E45E00BF05E5 /* apple_event_22_3_8.reality */,
+				5A9D934628B8E45E00BF05E5 /* apple_event_21_9_14.reality */,
+				5A9D934728B8E45E00BF05E5 /* apple_event_20_9_15.usdz */,
+				5A9D934828B8E45E00BF05E5 /* apple_event_20_10_13.usdz */,
+				5A9D934928B8E45E00BF05E5 /* apple_event_22_9_7.reality */,
+				5A9D936428B8E45E00BF05E5 /* apple_event_21_10_18.reality */,
+				5A9D936528B8E45E00BF05E5 /* apple_event_21_4_20.usdz */,
+			);
+			path = AppleEvent;
+			sourceTree = "<group>";
+		};
+		5A9D934A28B8E45E00BF05E5 /* wwdc22 */ = {
+			isa = PBXGroup;
+			children = (
+				5A9D934B28B8E45E00BF05E5 /* apple_event_en_26.usdz */,
+				5A9D934C28B8E45E00BF05E5 /* apple_event_en_8.usdz */,
+				5A9D934D28B8E45E00BF05E5 /* apple_event_en_10.usdz */,
+				5A9D934E28B8E45E00BF05E5 /* apple_event_en_4.usdz */,
+				5A9D934F28B8E45E00BF05E5 /* apple_event_en_5.usdz */,
+				5A9D935028B8E45E00BF05E5 /* apple_event_en_11.usdz */,
+				5A9D935128B8E45E00BF05E5 /* apple_event_en_9.usdz */,
+				5A9D935228B8E45E00BF05E5 /* apple_event_en_16.usdz */,
+				5A9D935328B8E45E00BF05E5 /* apple_event_en_2.usdz */,
+				5A9D935428B8E45E00BF05E5 /* apple_event_en_20.usdz */,
+				5A9D935528B8E45E00BF05E5 /* apple_event_en_21.usdz */,
+				5A9D935628B8E45E00BF05E5 /* apple_event_en_3.usdz */,
+				5A9D935728B8E45E00BF05E5 /* apple_event_en_17.usdz */,
+				5A9D935828B8E45E00BF05E5 /* apple_event_en_22.usdz */,
+				5A9D935928B8E45E00BF05E5 /* apple_event_en_18.usdz */,
+				5A9D935A28B8E45E00BF05E5 /* apple_event_en_19.usdz */,
+				5A9D935B28B8E45E00BF05E5 /* apple_event_en_23.usdz */,
+				5A9D935C28B8E45E00BF05E5 /* apple_event_en_15.usdz */,
+				5A9D935D28B8E45E00BF05E5 /* apple_event_en_1.usdz */,
+				5A9D935E28B8E45E00BF05E5 /* apple_event_en_24.usdz */,
+				5A9D935F28B8E45E00BF05E5 /* apple_event_en_6.usdz */,
+				5A9D936028B8E45E00BF05E5 /* apple_event_en_12.usdz */,
+				5A9D936128B8E45E00BF05E5 /* apple_event_en_13.usdz */,
+				5A9D936228B8E45E00BF05E5 /* apple_event_en_7.usdz */,
+				5A9D936328B8E45E00BF05E5 /* apple_event_en_25.usdz */,
+			);
+			path = wwdc22;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,8 +292,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9D937528B8E45E00BF05E5 /* apple_event_en_20.usdz in Resources */,
+				5A9D938228B8E45E00BF05E5 /* apple_event_en_13.usdz in Resources */,
+				5A9D936828B8E45E00BF05E5 /* apple_event_21_9_14.reality in Resources */,
+				5A9D937628B8E45E00BF05E5 /* apple_event_en_21.usdz in Resources */,
+				5A9D938328B8E45E00BF05E5 /* apple_event_en_7.usdz in Resources */,
+				5A9D938628B8E45E00BF05E5 /* apple_event_21_4_20.usdz in Resources */,
+				5A9D937428B8E45E00BF05E5 /* apple_event_en_2.usdz in Resources */,
+				5A9D937A28B8E45E00BF05E5 /* apple_event_en_18.usdz in Resources */,
+				5A9D937E28B8E45E00BF05E5 /* apple_event_en_1.usdz in Resources */,
+				5A9D937928B8E45E00BF05E5 /* apple_event_en_22.usdz in Resources */,
+				5A9D936928B8E45E00BF05E5 /* apple_event_20_9_15.usdz in Resources */,
+				5A9D936E28B8E45E00BF05E5 /* apple_event_en_10.usdz in Resources */,
+				5A9D938128B8E45E00BF05E5 /* apple_event_en_12.usdz in Resources */,
+				5A9D937B28B8E45E00BF05E5 /* apple_event_en_19.usdz in Resources */,
+				5A9D938528B8E45E00BF05E5 /* apple_event_21_10_18.reality in Resources */,
 				5A9D932828B8D8D600BF05E5 /* Preview Assets.xcassets in Resources */,
+				5A9D937128B8E45E00BF05E5 /* apple_event_en_11.usdz in Resources */,
+				5A9D937728B8E45E00BF05E5 /* apple_event_en_3.usdz in Resources */,
+				5A9D938028B8E45E00BF05E5 /* apple_event_en_6.usdz in Resources */,
+				5A9D937C28B8E45E00BF05E5 /* apple_event_en_23.usdz in Resources */,
+				5A9D937328B8E45E00BF05E5 /* apple_event_en_16.usdz in Resources */,
+				5A9D936D28B8E45E00BF05E5 /* apple_event_en_8.usdz in Resources */,
+				5A9D936F28B8E45E00BF05E5 /* apple_event_en_4.usdz in Resources */,
+				5A9D937828B8E45E00BF05E5 /* apple_event_en_17.usdz in Resources */,
+				5A9D936728B8E45E00BF05E5 /* apple_event_22_3_8.reality in Resources */,
+				5A9D937D28B8E45E00BF05E5 /* apple_event_en_15.usdz in Resources */,
+				5A9D937228B8E45E00BF05E5 /* apple_event_en_9.usdz in Resources */,
+				5A9D938428B8E45E00BF05E5 /* apple_event_en_25.usdz in Resources */,
+				5A9D936A28B8E45E00BF05E5 /* apple_event_20_10_13.usdz in Resources */,
+				5A9D936628B8E45E00BF05E5 /* apple_event_20_11_10.usdz in Resources */,
+				5A9D936B28B8E45E00BF05E5 /* apple_event_22_9_7.reality in Resources */,
+				5A9D937F28B8E45E00BF05E5 /* apple_event_en_24.usdz in Resources */,
+				5A9D937028B8E45E00BF05E5 /* apple_event_en_5.usdz in Resources */,
 				5A9D932528B8D8D600BF05E5 /* Assets.xcassets in Resources */,
+				5A9D936C28B8E45E00BF05E5 /* apple_event_en_26.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

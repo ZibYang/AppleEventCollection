@@ -34,8 +34,7 @@ struct SpecialEventView: View {
             }
         }
         .fullScreenCover(isPresented: $appStatus.toShowARModel){
-            ARModelView(modelName: appStatus.pickedModelName, modelExtension: appStatus.pickedModelExtension)
-                .environmentObject(appStatus)
+            ARModelView()
         }
         .environmentObject(appStatus)
     }

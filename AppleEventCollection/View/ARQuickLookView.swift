@@ -11,9 +11,7 @@ import QuickLook
 import ARKit
 
 struct ARQuickLookView: UIViewControllerRepresentable {
-    var name: String
-    var modelExtension: String = "reality"
-    var allowScaling: Bool = true
+    @EnvironmentObject var appStatus: AppStatus
     
     func makeCoordinator() -> ARQuickLookView.Coordinator {
         Coordinator(self)
@@ -33,7 +31,6 @@ struct ARQuickLookView: UIViewControllerRepresentable {
     }
     class Coordinator: NSObject, QLPreviewControllerDataSource, QLPreviewControllerDelegate {
         let parent: ARQuickLookView
-        private lazy var fileURL: URL = Bundle.main.url(forResource: parent.name, withExtension: parent.modelExtension)!
 
         init(_ parent: ARQuickLookView) {
             self.parent = parent
@@ -49,12 +46,12 @@ struct ARQuickLookView: UIViewControllerRepresentable {
         // a QLPreviewItem instance describing that item:
         func previewController(_ controller: QLPreviewController,
                                previewItemAt index: Int) -> QLPreviewItem {
-            guard let fileURL = Bundle.main.url(forResource: parent.name, withExtension: parent.modelExtension) else {
-                fatalError("Unable to load \(parent.name).\(parent.modelExtension) from main bundle")
+            guard let fileURL = parent.appStatus.modelURL else {
+                fatalError()
             }
 
             let item = ARQuickLookPreviewItem(fileAt: fileURL)
-            item.allowsContentScaling = parent.allowScaling
+            item.allowsContentScaling = parent.appStatus.allowScaling
             return item
         }
     }
@@ -62,7 +59,8 @@ struct ARQuickLookView: UIViewControllerRepresentable {
 
 struct ARQuickLookView_Previews: PreviewProvider {
     static var previews: some View {
-        ARQuickLookView(name: "apple_event_21_9_14")
+        ARQuickLookView()
+            .environmentObject(AppStatus())
     }
 }
 
