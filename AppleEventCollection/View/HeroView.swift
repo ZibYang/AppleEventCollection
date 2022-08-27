@@ -17,40 +17,85 @@ struct HeroView: View{
     var body: some View{
         ZStack(alignment: .bottomTrailing){
             ZStack(alignment: .bottom){
-                VStack(alignment: .leading, spacing: 0){
-                    Image(event.thumbnail)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        
-                    if(showDetail){
-                        VStack(alignment: .leading){
-                            HStack {
-                                Text(event.title)
-                                    .font(.title2)
-                                    .bold()
-                                    .foregroundStyle(.linearGradient(
-                                        colors: event.titleColorSet,
-                                        startPoint: event.tcStart, endPoint: event.tcEnd))
-                                    .padding(.bottom)
-                            }
-                            Text(event.time)
-                                .font(.headline)
-                                .foregroundColor(.gray)
+                ScrollView{
+                    VStack(alignment: .leading, spacing: 0){
+                        Image(event.thumbnail)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
                             
-                            Text(event.detail)
-                                .foregroundColor(event.mainColor)
-                                .lineLimit(2)
-                                .multilineTextAlignment(.leading)
-                                .padding(.trailing, event.modelName != "" ? 100 : 20)
+                        if(showDetail){
+                            VStack(alignment: .leading){
+                                HStack {
+                                    Text(event.title)
+                                        .font(.title2)
+                                        .bold()
+                                        .foregroundStyle(.linearGradient(
+                                            colors: event.titleColorSet,
+                                            startPoint: event.tcStart, endPoint: event.tcEnd))
+                                }
+                                .padding(.bottom)
+                                
+                                Text(event.time)
+                                    .font(.headline)
+                                    .foregroundColor(.gray)
+                                
+                                Text(event.detail)
+                                    .foregroundColor(event.mainColor)
+                                    .lineLimit(2)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.trailing, event.modelName != "" ? 100 : 20)
+                                
+                                ForEach(0..<event.sectionTitle.count, id: \.self){i in
+                                    VStack(alignment: .leading){
+                                        Text(event.sectionTitle[i])
+                                            .font(.caption)
+                                            .foregroundColor(.gray.opacity(0.5))
+                                            .padding([.top, .leading])
+                                        VStack{
+                                            ForEach(event.bigAttachmentIndex[i]..<event.bigAttachmentIndex[i+1]){ j in
+                                                HStack(alignment: .top){
+                                                    Image(event.bigAttachmentList[j])
+                                                        .resizable()
+                                                        .aspectRatio(contentMode: .fit)
+                                                        .frame(maxWidth: event.thumbnail.contains("ADA") ? 60 : 120,
+                                                               maxHeight: event.thumbnail.contains("ADA") ? 60 : 90, alignment: .leading)
+                                                        .cornerRadius(12)
+                                                    Text(event.bigAttachmentTitle[j])
+                                                        .font(.headline)
+                                                    Spacer()
+                                                }
+                                            }
+                                            
+                                            HStack{
+                                                ForEach(event.smallAttachmentIndex[i]..<event.smallAttachmentIndex[i+1]){ j in
+                                                    VStack{
+                                                        Image(event.smallAttachmentList[j])
+                                                            .resizable()
+                                                            .frame(maxWidth: 40, maxHeight: 40)
+                                                        Text(event.smallAttachmentTitle[j])
+                                                            .font(.caption)
+                                                            .lineLimit(1)
+                                                    }
+                                                    .frame(width: 60)
+                                                }
+                                                Spacer()
+                                            }
+                                            .padding(.top)
+                                        }
+                                        .padding()
+                                        .mySectionModifier()
+                                    }
+                                }
+                            }
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                            .padding()
                         }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
-                        .padding()
                     }
+                    .background(.linearGradient(
+                        colors: event.backgroundColor,
+                        startPoint: event.bgcStart,
+                        endPoint: event.bgcEnd))
                 }
-                .background(.linearGradient(
-                    colors: event.backgroundColor,
-                    startPoint: event.bgcStart,
-                    endPoint: event.bgcEnd))
             }
             
             if( event.modelName != ""){

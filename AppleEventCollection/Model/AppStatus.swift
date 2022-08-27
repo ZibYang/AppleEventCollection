@@ -2,7 +2,7 @@
 //  AppStatus.swift
 //  AppleEventCollection
 //
-//  Created by 阿彪 on 2022/8/26.
+//  Created by ZZY on 2022/8/26.
 //  Copyright © 2022 Personal usage. All rights reserved.
 //
 

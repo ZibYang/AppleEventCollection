@@ -16,7 +16,15 @@ let WWDCEventList = [
         detail: "Announcing Apple's biggest updates ever to iOS, iPadOS, watchOS — and what's more? Let's find out.",
         thumbnail: "wwdc22_6_6",
         modelName: "apple_event_en_",
-        modelExtension: "usdz"),
+        modelExtension: "usdz",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 2],
+        bigAttachmentList: ["macbookAirM2", "macbookPro13M2"],
+        bigAttachmentTitle: ["Macbook Air with M2 chip", "Macbook Pro 13-inch with M2"],
+        smallAttachmentIndex: [0, 4],
+        smallAttachmentList: ["iOS16", "iPadOS16", "macOSVentura", "watchOS9"],
+        smallAttachmentTitle: ["iOS 16", "iPadOS 16", "macOS Ventura", "watchOS 9"]
+    ),
     AppleEvent(
         time: "June 6, 2021",
         title: "Glow and behold.",

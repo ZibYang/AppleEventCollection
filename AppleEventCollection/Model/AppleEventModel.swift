@@ -28,4 +28,13 @@ struct AppleEvent: Identifiable{
     var thumbnail: String = ""
     var modelName: String = ""
     var modelExtension: String = ""
+    
+    var sectionTitle: [String] = []
+    var bigAttachmentIndex: [Int] = [0, 0]
+    var bigAttachmentList: [String] = []
+    var bigAttachmentTitle: [String] = []
+    
+    var smallAttachmentIndex: [Int] = [0, 0]
+    var smallAttachmentList: [String] = []
+    var smallAttachmentTitle: [String] = []
 }

@@ -24,7 +24,12 @@ let appleEventList = [
         detail: "Introducing the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 and iPhone 13 Pro in two new shades of green.",
         thumbnail: "apple_event_22_3_8",
         modelName: "apple_event_22_3_8",
-        modelExtension: "reality"),
+        modelExtension: "reality",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 4],
+        bigAttachmentList: ["macStudio&Display", "iPhone13Green", "iPhoneSE3", "iPadAirM1"],
+        bigAttachmentTitle: ["Mac Studio and Studio Display", "iPhone 13 (Green)", "iPhone se3", "iPad Air (M1 chip)"]
+    ),
     AppleEvent(
         titleColorSet: [.white, Color(red: 114/255, green: 154/255, blue: 248/255)],
         time: "October 18, 2021",
@@ -32,7 +37,12 @@ let appleEventList = [
         detail: "Introducing the new MacBook Pro with M1 Pro or M1 Max, all-new AirPods, and HomePod mini in five bold colors.",
         thumbnail: "apple_event_21_10_18",
         modelName: "apple_event_21_10_18",
-        modelExtension: "reality"),
+        modelExtension: "reality",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["macBookPro14&16", "HomePodMini", "AirPods3"],
+        bigAttachmentTitle: ["MacBook Pro 14 & 16 (M1 Pro and M1 Max chip)", "HomePod mini", "AirPods 3"]
+    ),
     AppleEvent(
         titleColorSet: [Color(red: 29/255, green: 53/255, blue: 86/255), Color(red: 244/255, green: 187/255, blue: 204/255)],
         tcStart: .top,
@@ -42,7 +52,12 @@ let appleEventList = [
         detail: "Introducing iPhone 13 Pro, iPhone 13, Apple Watch Series 7, and the new iPad mini and iPad.",
         thumbnail: "apple_event_21_9_14",
         modelName: "apple_event_21_9_14",
-        modelExtension: "reality"),
+        modelExtension: "reality",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 5],
+        bigAttachmentList: ["iPhone13", "iPhone13Pro", "AppleWatchS7", "iPadmini", "iPad"],
+        bigAttachmentTitle: ["iPhone 13", "iPhone 13 Pro", "Apple Watch S7", "iPad mini", "iPad"]
+    ),
     AppleEvent(
         mainColor: .black,
         backgroundColor: [Color(red: 245/255, green: 245/255, blue: 247/255)],

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6DE69E28BA0AFD0000A294 /* CustomSectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6DE69D28BA0AFD0000A294 /* CustomSectionModifier.swift */; };
 		5A9D932128B8D8D500BF05E5 /* AppleEventCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D932028B8D8D500BF05E5 /* AppleEventCollectionApp.swift */; };
 		5A9D932328B8D8D500BF05E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D932228B8D8D500BF05E5 /* HomeView.swift */; };
 		5A9D932528B8D8D600BF05E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D932428B8D8D600BF05E5 /* Assets.xcassets */; };
@@ -53,9 +54,16 @@
 		5A9D938428B8E45E00BF05E5 /* apple_event_en_25.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936328B8E45E00BF05E5 /* apple_event_en_25.usdz */; };
 		5A9D938528B8E45E00BF05E5 /* apple_event_21_10_18.reality in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936428B8E45E00BF05E5 /* apple_event_21_10_18.reality */; };
 		5A9D938628B8E45E00BF05E5 /* apple_event_21_4_20.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D936528B8E45E00BF05E5 /* apple_event_21_4_20.usdz */; };
+		5A9D938A28B9FA4500BF05E5 /* macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D938928B9FA4500BF05E5 /* macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz */; };
+		5A9D939328B9FA7000BF05E5 /* macbook_air_m2_chip_starlight_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D938E28B9FA6F00BF05E5 /* macbook_air_m2_chip_starlight_ios15.usdz */; };
+		5A9D939428B9FA7000BF05E5 /* macbook_air_m2_chip_space_gray_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D938F28B9FA6F00BF05E5 /* macbook_air_m2_chip_space_gray_ios15.usdz */; };
+		5A9D939528B9FA7000BF05E5 /* macbook_air_m2_chip_midnight_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D939028B9FA6F00BF05E5 /* macbook_air_m2_chip_midnight_ios15.usdz */; };
+		5A9D939628B9FA7000BF05E5 /* macbook_air_m2_chip_silver_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D939128B9FA7000BF05E5 /* macbook_air_m2_chip_silver_ios15.usdz */; };
+		5A9D939728B9FA7000BF05E5 /* macbook_pro_13in_2port_m1_chip_silver_ios15.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D939228B9FA7000BF05E5 /* macbook_pro_13in_2port_m1_chip_silver_ios15.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A6DE69D28BA0AFD0000A294 /* CustomSectionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSectionModifier.swift; sourceTree = "<group>"; };
 		5A9D931D28B8D8D500BF05E5 /* AppleEventCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleEventCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9D932028B8D8D500BF05E5 /* AppleEventCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleEventCollectionApp.swift; sourceTree = "<group>"; };
 		5A9D932228B8D8D500BF05E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -103,6 +111,12 @@
 		5A9D936328B8E45E00BF05E5 /* apple_event_en_25.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_en_25.usdz; sourceTree = "<group>"; };
 		5A9D936428B8E45E00BF05E5 /* apple_event_21_10_18.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple_event_21_10_18.reality; sourceTree = "<group>"; };
 		5A9D936528B8E45E00BF05E5 /* apple_event_21_4_20.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = apple_event_21_4_20.usdz; sourceTree = "<group>"; };
+		5A9D938928B9FA4500BF05E5 /* macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz; sourceTree = "<group>"; };
+		5A9D938E28B9FA6F00BF05E5 /* macbook_air_m2_chip_starlight_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_air_m2_chip_starlight_ios15.usdz; sourceTree = "<group>"; };
+		5A9D938F28B9FA6F00BF05E5 /* macbook_air_m2_chip_space_gray_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_air_m2_chip_space_gray_ios15.usdz; sourceTree = "<group>"; };
+		5A9D939028B9FA6F00BF05E5 /* macbook_air_m2_chip_midnight_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_air_m2_chip_midnight_ios15.usdz; sourceTree = "<group>"; };
+		5A9D939128B9FA7000BF05E5 /* macbook_air_m2_chip_silver_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_air_m2_chip_silver_ios15.usdz; sourceTree = "<group>"; };
+		5A9D939228B9FA7000BF05E5 /* macbook_pro_13in_2port_m1_chip_silver_ios15.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = macbook_pro_13in_2port_m1_chip_silver_ios15.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +130,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A6DE69C28BA0AEE0000A294 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A6DE69D28BA0AFD0000A294 /* CustomSectionModifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5A9D931428B8D8D500BF05E5 = {
 			isa = PBXGroup;
 			children = (
+				5A9D938C28B9FA5400BF05E5 /* NewProducts */,
 				5A9D934328B8E45E00BF05E5 /* AppleEvent */,
 				5A9D931F28B8D8D500BF05E5 /* AppleEventCollection */,
 				5A9D931E28B8D8D500BF05E5 /* Products */,
@@ -167,6 +190,7 @@
 		5A9D933128B8DDA400BF05E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5A6DE69C28BA0AEE0000A294 /* Extensions */,
 				5A9D933228B8DDB100BF05E5 /* SpecialEventView.swift */,
 				5A9D933628B8DE2500BF05E5 /* HeroView.swift */,
 				5A9D933828B8DE6700BF05E5 /* ARModelView.swift */,
@@ -233,6 +257,27 @@
 			path = wwdc22;
 			sourceTree = "<group>";
 		};
+		5A9D938C28B9FA5400BF05E5 /* NewProducts */ = {
+			isa = PBXGroup;
+			children = (
+				5A9D938D28B9FA6300BF05E5 /* WWDC22 */,
+			);
+			path = NewProducts;
+			sourceTree = "<group>";
+		};
+		5A9D938D28B9FA6300BF05E5 /* WWDC22 */ = {
+			isa = PBXGroup;
+			children = (
+				5A9D938928B9FA4500BF05E5 /* macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz */,
+				5A9D939028B9FA6F00BF05E5 /* macbook_air_m2_chip_midnight_ios15.usdz */,
+				5A9D939128B9FA7000BF05E5 /* macbook_air_m2_chip_silver_ios15.usdz */,
+				5A9D938F28B9FA6F00BF05E5 /* macbook_air_m2_chip_space_gray_ios15.usdz */,
+				5A9D938E28B9FA6F00BF05E5 /* macbook_air_m2_chip_starlight_ios15.usdz */,
+				5A9D939228B9FA7000BF05E5 /* macbook_pro_13in_2port_m1_chip_silver_ios15.usdz */,
+			);
+			path = WWDC22;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,10 +337,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9D939428B9FA7000BF05E5 /* macbook_air_m2_chip_space_gray_ios15.usdz in Resources */,
 				5A9D937528B8E45E00BF05E5 /* apple_event_en_20.usdz in Resources */,
 				5A9D938228B8E45E00BF05E5 /* apple_event_en_13.usdz in Resources */,
 				5A9D936828B8E45E00BF05E5 /* apple_event_21_9_14.reality in Resources */,
 				5A9D937628B8E45E00BF05E5 /* apple_event_en_21.usdz in Resources */,
+				5A9D939528B9FA7000BF05E5 /* macbook_air_m2_chip_midnight_ios15.usdz in Resources */,
 				5A9D938328B8E45E00BF05E5 /* apple_event_en_7.usdz in Resources */,
 				5A9D938628B8E45E00BF05E5 /* apple_event_21_4_20.usdz in Resources */,
 				5A9D937428B8E45E00BF05E5 /* apple_event_en_2.usdz in Resources */,
@@ -313,6 +360,7 @@
 				5A9D938028B8E45E00BF05E5 /* apple_event_en_6.usdz in Resources */,
 				5A9D937C28B8E45E00BF05E5 /* apple_event_en_23.usdz in Resources */,
 				5A9D937328B8E45E00BF05E5 /* apple_event_en_16.usdz in Resources */,
+				5A9D938A28B9FA4500BF05E5 /* macbook_pro_13in_2port_m1_chip_space_gray_ios15.usdz in Resources */,
 				5A9D936D28B8E45E00BF05E5 /* apple_event_en_8.usdz in Resources */,
 				5A9D936F28B8E45E00BF05E5 /* apple_event_en_4.usdz in Resources */,
 				5A9D937828B8E45E00BF05E5 /* apple_event_en_17.usdz in Resources */,
@@ -320,11 +368,14 @@
 				5A9D937D28B8E45E00BF05E5 /* apple_event_en_15.usdz in Resources */,
 				5A9D937228B8E45E00BF05E5 /* apple_event_en_9.usdz in Resources */,
 				5A9D938428B8E45E00BF05E5 /* apple_event_en_25.usdz in Resources */,
+				5A9D939328B9FA7000BF05E5 /* macbook_air_m2_chip_starlight_ios15.usdz in Resources */,
 				5A9D936A28B8E45E00BF05E5 /* apple_event_20_10_13.usdz in Resources */,
+				5A9D939728B9FA7000BF05E5 /* macbook_pro_13in_2port_m1_chip_silver_ios15.usdz in Resources */,
 				5A9D936628B8E45E00BF05E5 /* apple_event_20_11_10.usdz in Resources */,
 				5A9D936B28B8E45E00BF05E5 /* apple_event_22_9_7.reality in Resources */,
 				5A9D937F28B8E45E00BF05E5 /* apple_event_en_24.usdz in Resources */,
 				5A9D937028B8E45E00BF05E5 /* apple_event_en_5.usdz in Resources */,
+				5A9D939628B9FA7000BF05E5 /* macbook_air_m2_chip_silver_ios15.usdz in Resources */,
 				5A9D932528B8D8D600BF05E5 /* Assets.xcassets in Resources */,
 				5A9D936C28B8E45E00BF05E5 /* apple_event_en_26.usdz in Resources */,
 			);
@@ -342,6 +393,7 @@
 				5A9D932328B8D8D500BF05E5 /* HomeView.swift in Sources */,
 				5A9D933928B8DE6700BF05E5 /* ARModelView.swift in Sources */,
 				5A9D933E28B8DF0100BF05E5 /* ADAEventList.swift in Sources */,
+				5A6DE69E28BA0AFD0000A294 /* CustomSectionModifier.swift in Sources */,
 				5A9D933528B8DDFD00BF05E5 /* AppStatus.swift in Sources */,
 				5A9D933728B8DE2500BF05E5 /* HeroView.swift in Sources */,
 				5A9D934228B8DFBE00BF05E5 /* AppleEventList.swift in Sources */,
