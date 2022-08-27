@@ -29,7 +29,12 @@ let WWDCEventList = [
         time: "June 6, 2021",
         title: "Glow and behold.",
         detail: "Announcing Apple's biggest updates ever to iOS, iPadOS, watchOS — and the entirely reimagined macOS Big Sur.",
-        thumbnail: "wwdc21_6_6"),
+        thumbnail: "wwdc21_6_6",
+        sectionTitle: ["New product"],
+        smallAttachmentIndex: [0, 4],
+        smallAttachmentList: ["iOS15", "iPadOS15", "macOSMonterey", "watchOS8"],
+        smallAttachmentTitle: ["iOS 15", "iPadOS 15", "macOS Monterey", "watchOS 8"]
+    ),
     AppleEvent(
         time: "June 22, 2020",
         title: "Full stream ahead.",
