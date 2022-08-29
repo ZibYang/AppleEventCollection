@@ -99,6 +99,7 @@ let ADAEventList = [
         title: "Apple Design Award 2019.",
         detail: "Apple Design Award 2019.",
         thumbnail: "ADA19",
+        sectionTitle: ["Winners"],
         bigAttachmentIndex: [0, 9],
         bigAttachmentList: ["Ordia", "FlowByMoleskine","TheGardensBetween","Asphalt9",
                             "PixelmatorPhoto", "ELOH",
@@ -108,11 +109,24 @@ let ADAEventList = [
                              "Butterfly iQ — Ultrasound", "Thumper: Pocket Edition", "HomeCourt - The Basketball App"]
     ),
     AppleEvent(
+        mainColor: .black,
         backgroundColor: [Color(red: 233/255, green: 234/255, blue: 233/255)],
+        titleColorSet: [.black],
         time: "June, 2018",
         title: "Apple Design Award 2018.",
         detail: "Apple Design Award 2018.",
-        thumbnail: "ADA18"),
+        thumbnail: "ADA18",
+        sectionTitle: ["Winners"],
+        bigAttachmentIndex: [0, 10],
+        bigAttachmentList: ["Agenda", "BANDIMAL","Calzy","iTranslate",
+                            "TritonSponge", "Florence",
+                            "Playdead’sINSIDE", "Alto’sOdyssey", "Frost",
+                            "Oddmar"],
+        bigAttachmentTitle: ["Agenda - A new take on notes", "BANDIMAL",
+                             "Calzy","iTranslate Converse",
+                             "Triton Sponge", "Florence",
+                             "Playdead’s INSIDE", "Alto’s Odyssey", "Frost", "Oddmar"]
+    ),
     AppleEvent(
         backgroundColor: [Color(red: 18/255, green: 19/255, blue: 16/255)],
         titleColorSet: [.white],

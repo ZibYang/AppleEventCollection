@@ -118,18 +118,20 @@ let appleEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "October 30, 2018",
         title: "There's more in the making.",
         detail: "Announcing the new iPad Pro, MacBook Air, and Mac mini.",
         thumbnail: "apple_event_18_10_30"),
     AppleEvent(
-        time: "September 12, 2019",
+        time: "September 12, 2018",
         title: "Gather round.",
         detail: "Announcing the new iPhone XS, iPhone XS Max, iPhone XR, and Apple Watch Series 4.",
         thumbnail: "apple_event_18_9_12"),
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "March 27, 2018",
         title: "Let’s take a field trip.",
         detail: "Announcing the new iPad, which now supports Apple Pencil, and how teachers everywhere are using it to ignite creativity in their students.",
@@ -152,6 +154,7 @@ let appleEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "March 21, 2016",
         title: "Let us loop you in.",
         detail: "Check out our live event and watch the introduction of the stunning 9.7-inch iPad Pro, beautiful new bands for Apple Watch, and iPhone SE — the most powerful 4‑inch phone ever.",
@@ -164,6 +167,7 @@ let appleEventList = [
         detail: "Check out iPhone 6s and iPhone 6s Plus, learn about the powerful iPad Pro, take a look at the new features and bands for Apple Watch, and see the premiere of the all-new Apple TV.",
         thumbnail: "apple_event_15_9_9"),
     AppleEvent(
+        titleColorSet: [.black],
         time: "March 9, 2015",
         title: "Spring forward.",
         detail: "Get an in-depth look at Apple Watch, witness the unveiling of the new MacBook, and learn about the innovations in ResearchKit.",
@@ -172,6 +176,7 @@ let appleEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "October 16, 2014",
         title: "It's been way too long.",
         detail: "Get a first look at iMac with Retina 5K display and iPad Air 2, and learn about the release of OS X Yosemite.",
@@ -180,6 +185,7 @@ let appleEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "September 9, 2014",
         title: "Wish we could say more.",
         detail: "From the launch of Apple Watch to the arrival of iPhone 6 to a live performance from U2, this is an event not to be missed.",

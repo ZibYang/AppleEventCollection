@@ -49,6 +49,7 @@ let WWDCEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "June 4, 2018",
         title: "WWDC 2018",
         detail: "Announcing upgraded operating systems for iPhone and iPad, Mac, Apple Watch, and Apple TV.",
@@ -56,6 +57,7 @@ let WWDCEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [Color(red: 211/255, green: 211/255, blue: 211/255)],
+        titleColorSet: [.black],
         time: "June 10, 2017",
         title: "WWDC 2017.",
         detail: "Check out the full event with announcements including a new size for iPad Pro, performance boosts across the Mac family, and a breakthrough speaker with HomePod.",
@@ -77,6 +79,7 @@ let WWDCEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "June 4, 2014",
         title: "WWDC14.",
         detail: "Get a first look at iOS 10, with new features for Messages, Maps, and more. Learn about macOS Sierra, the updated tvOS, and what’s next for watchOS and Apple Pay.",
@@ -84,6 +87,7 @@ let WWDCEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "June 10, 2013",
         title: "WWDC13.",
         detail: "Get an in-depth look at what’s next in iOS and OS X, and learn how to take your apps to the next level. With over 100 sessions, extensive hands–on labs, and engaging events, you’ll connect with Apple engineers and fellow developers for an incredible week of inspiration.",

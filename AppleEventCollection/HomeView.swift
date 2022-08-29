@@ -42,6 +42,7 @@ struct HomeView: View {
                 .tag(3)
             
         }
+        .edgesIgnoringSafeArea(.all)
         .environment(\.colorScheme, .dark)
     }
 }

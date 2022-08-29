@@ -17,22 +17,24 @@ struct SpecialEventView: View {
     
     var body: some View {
         ZStack {
-            Color.black
-                .ignoresSafeArea()
-            ScrollView(){
+            ScrollView(showsIndicators: false){
                 LazyVGrid(columns: colums, spacing: 0, pinnedViews: .sectionHeaders){
                         Section(header: sectionTitle(titleText: titleText) .font(.headline)) {
                         ForEach(eventList){ event in
                             HeroView(event: event)
                                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                                .padding()
+                                .padding(.horizontal, 1)
+                                .padding(.vertical)
                                 .shadow(color: .white, radius: 1)
                         }
+                            Color.clear
+                                .frame(height: 70)
                     }
-                    .ignoresSafeArea()
                 }
             }
+            .padding(.bottom)
         }
+        .ignoresSafeArea()
         .fullScreenCover(isPresented: $appStatus.toShowARModel){
             ARModelView()
         }
@@ -50,7 +52,9 @@ struct SpecialEventView: View {
                 .cornerRadius(12)
             Spacer()
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.top, 30)
+        .background(.black.opacity(0.7))
     }
 }
 
