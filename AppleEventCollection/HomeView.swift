@@ -35,11 +35,11 @@ struct HomeView: View {
                 }
                 .tag(2)
             
-            Text("TODO")
-                .tabItem {
-                    Label("Developer", systemImage: "d.square.fill")
-                }
-                .tag(3)
+//            Text("TODO")
+//                .tabItem {
+//                    Label("Developer", systemImage: "d.square.fill")
+//                }
+//                .tag(3)
             
         }
         .edgesIgnoringSafeArea(.all)

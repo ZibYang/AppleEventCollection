@@ -66,28 +66,30 @@ struct HeroView: View{
                                                 }
                                             }
                                             
-                                            HStack{
-                                                ForEach(event.smallAttachmentIndex[i]..<event.smallAttachmentIndex[i+1]){ j in
-                                                    VStack{
-                                                        Image(event.smallAttachmentList[j])
-                                                            .resizable()
-                                                            .frame(maxWidth: 40, maxHeight: 40)
-                                                        Text(event.smallAttachmentTitle[j])
-                                                            .font(.caption)
-                                                            .lineLimit(1)
+                                            ScrollView(.horizontal, showsIndicators: false){
+                                                HStack{
+                                                    ForEach(event.smallAttachmentIndex[i]..<event.smallAttachmentIndex[i+1]){ j in
+                                                        VStack{
+                                                            Image(event.smallAttachmentList[j])
+                                                                .resizable()
+                                                                .frame(maxWidth: 40, maxHeight: 40)
+                                                            Text(event.smallAttachmentTitle[j])
+                                                                .font(.caption)
+                                                                .lineLimit(1)
+                                                        }
+                                                        .frame(width: 60)
                                                     }
-                                                    .frame(width: 60)
+                                                    Spacer()
                                                 }
-                                                Spacer()
                                             }
-                                            .padding(.top)
+                                            .padding(.vertical)
                                         }
                                         .padding()
                                         .mySectionModifier()
                                     }
                                 }
                             }
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+                            .frame(maxHeight: .infinity, alignment: .bottomLeading)
                             .padding()
                         }
                     }
@@ -96,6 +98,7 @@ struct HeroView: View{
                         startPoint: event.bgcStart,
                         endPoint: event.bgcEnd))
                 }
+                .frame(maxWidth: UIScreen.main.bounds.size.width - 2)
             }
             
             if( event.modelName != ""){

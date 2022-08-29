@@ -13,7 +13,7 @@ struct SpecialEventView: View {
     
     var titleText: String
     var eventList: [AppleEvent]
-    var colums = [GridItem(.adaptive(minimum: 500), spacing: 0)]
+    var colums = [GridItem(.adaptive(minimum: 500), spacing: 10)]
     
     var body: some View {
         ZStack {
