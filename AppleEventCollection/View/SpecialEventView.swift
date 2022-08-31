@@ -53,7 +53,7 @@ struct SpecialEventView: View {
             Spacer()
         }
         .padding(.horizontal)
-        .padding(.top, 30)
+        .padding(.top, 50)
         .background(.black.opacity(0.7))
     }
 }
