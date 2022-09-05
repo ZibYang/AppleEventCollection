@@ -76,7 +76,12 @@ let appleEventList = [
         detail: "Introducing the new iMac, iPad Pro, iPhone 12 in purple, AirTag, and Apple TV 4K.",
         thumbnail: "apple_event_21_4_20",
         modelName: "apple_event_21_4_20",
-        modelExtension: "usdz"),
+        modelExtension: "usdz",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 5],
+        bigAttachmentList: ["iPhone12Purple", "iMacM1", "iPadPro2021", "AirTag", "AppleTV4K"],
+        bigAttachmentTitle: ["iPhone 12 Purple", "iMac with M1", "iPad Pro with M1", "AirTag", "Apple TV 4K"]
+    ),
     AppleEvent(
         titleColorSet: [.purple, .pink, .orange, .yellow, Color(red: 196/255, green: 197/255, blue: 200/255), .blue],
         time: "November 10, 2020",
