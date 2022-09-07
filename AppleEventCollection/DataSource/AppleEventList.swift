@@ -89,7 +89,12 @@ let appleEventList = [
         detail: "Introducing the new MacBook Air, 13‑inch MacBook Pro, and Mac mini, all with the Apple M1 chip.",
         thumbnail: "apple_event_20_11_10",
         modelName: "apple_event_20_11_10",
-        modelExtension: "usdz"),
+        modelExtension: "usdz",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["MacbookAirM1", "MacbookProM1", "Macmini"],
+        bigAttachmentTitle: ["Macbook Air with M1", "Macbook Pro with M1", "Mac mini with M1"]
+    ),
     AppleEvent(
         time: "October 13, 2020",
         title: "Hi, Speed.",
