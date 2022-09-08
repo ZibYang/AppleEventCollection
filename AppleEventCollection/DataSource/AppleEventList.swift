@@ -13,10 +13,15 @@ let appleEventList = [
         titleColorSet: [.blue, .white, .blue, .white, .yellow],
         time: "September 7, 2022",
         title: "Far out.",
-        detail: "Coming soon.",
+        detail: "Introducing an all-new iPhone lineup, rebuilt AirPods Pro, three new Apple Watch models, and an exciting update to Apple Fitness+.",
         thumbnail: "apple_event_22_9_7",
         modelName: "apple_event_22_9_7",
-        modelExtension: "reality"),
+        modelExtension: "reality",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 5],
+        bigAttachmentList: ["iPhone14Pro", "iPhone14", "AppleWatchS8", "AppleWatchUltra", "AirPodsPro2"],
+        bigAttachmentTitle: ["iPhone 14 Pro", "iPhone 14", "Apple Watch S8", "Apple Watch Ultra", "AirPods Pro 2"]
+    ),
     AppleEvent(
         titleColorSet: [.blue, .purple, .pink, .red, .orange, .yellow],
         time: "March 8, 2022",
