@@ -95,6 +95,7 @@ let WWDCEventList = [
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
+        titleColorSet: [.black],
         time: "June 8, 2015",
         title: "WWDC15.",
         detail: "See the announcement of Apple Music, get a preview of OS X El Capitan and iOS 9, and learn what’s next for Apple Watch and developers.",
