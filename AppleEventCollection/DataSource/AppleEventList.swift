@@ -106,7 +106,12 @@ let appleEventList = [
         detail: "Introducing iPhone 12 and iPhone 12 Pro with 5G, MagSafe accessories, and HomePod mini.",
         thumbnail: "apple_event_20_10_13",
         modelName: "apple_event_20_10_13",
-        modelExtension: "usdz"),
+        modelExtension: "usdz",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["HomePodMini2", "iPhone12", "iPhone12Pro"],
+        bigAttachmentTitle: ["HomePod mini", "iPhone 12", "iPhone 12 Pro"]
+    ),
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
