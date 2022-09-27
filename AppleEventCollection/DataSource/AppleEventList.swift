@@ -121,7 +121,12 @@ let appleEventList = [
         detail: "Introducing Apple Watch Series 6, Apple Watch SE, Apple Fitness+, the new iPad Air and iPad, and Apple One — the all-new Apple services bundle.",
         thumbnail: "apple_event_20_9_15",
         modelName: "apple_event_20_9_15",
-        modelExtension: "usdz"),
+        modelExtension: "usdz",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["AppleWatchS6", "AppleWatchSE", "iPadAir4th"],
+        bigAttachmentTitle: ["Apple Watch S6", "Apple Watch SE", "iPad Air 4th"]
+    ),
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
