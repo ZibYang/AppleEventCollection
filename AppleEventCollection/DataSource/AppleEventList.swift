@@ -134,7 +134,12 @@ let appleEventList = [
         time: "September 10, 2019",
         title: "By innovation only.",
         detail: "Announcing the new iPhone 11 Pro, iPhone 11, Apple Watch Series 5, and iPad.",
-        thumbnail: "apple_event_19_9_10"),
+        thumbnail: "apple_event_19_9_10",
+        sectionTitle: ["New product"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["iPhone11", "iPhone11Pro", "AppleWatchS5"],
+        bigAttachmentTitle: ["iPhone 11", "iPhone11 Pro/Pro Max", "Apple Watch S5"]
+    ),
     AppleEvent(
         time: "March 25, 2019",
         title: "It's show time.",
