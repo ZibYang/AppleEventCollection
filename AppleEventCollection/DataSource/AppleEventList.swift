@@ -144,7 +144,12 @@ let appleEventList = [
         time: "March 25, 2019",
         title: "It's show time.",
         detail: "Announcing the new Apple TV+, Apple News+, Apple Arcade, and Apple Card.",
-        thumbnail: "apple_event_19_3_25"),
+        thumbnail: "apple_event_19_3_25",
+        sectionTitle: ["New services"],
+        bigAttachmentIndex: [0, 4],
+        bigAttachmentList: ["AppleTV+", "AppleNews+", "AppleArcade", "AppleCard"],
+        bigAttachmentTitle: ["Apple TV+", "Apple News+", "Apple Arcade", "Apple Card"]
+    ),
     AppleEvent(
         mainColor: .black,
         backgroundColor: [.white],
