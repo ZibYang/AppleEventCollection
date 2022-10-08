@@ -157,7 +157,12 @@ let appleEventList = [
         time: "October 30, 2018",
         title: "There's more in the making.",
         detail: "Announcing the new iPad Pro, MacBook Air, and Mac mini.",
-        thumbnail: "apple_event_18_10_30"),
+        thumbnail: "apple_event_18_10_30",
+        sectionTitle: ["New services"],
+        bigAttachmentIndex: [0, 3],
+        bigAttachmentList: ["iPadPro3rd", "Macmini2018", "MacbookAir2018"],
+        bigAttachmentTitle: ["iPad Pro 3rd generation", "Mac mini", "Macbook Air"]
+    ),
     AppleEvent(
         time: "September 12, 2018",
         title: "Gather round.",
