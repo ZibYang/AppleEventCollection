@@ -10,33 +10,53 @@ import SwiftUI
 
 struct SpecialEventView: View {
     @StateObject var appStatus = AppStatus()
-    
+    @EnvironmentObject var eventSource: EventSource
+
     var titleText: String
-    var eventList: [AppleEvent]
+    var eventRange: [Int] // [0, 10]
     var colums = [GridItem(.adaptive(minimum: 500), spacing: 10)]
     
     var body: some View {
-        ZStack {
-            ScrollView(showsIndicators: false){
-                LazyVGrid(columns: colums, spacing: 0, pinnedViews: .sectionHeaders){
+        VStack{
+            ZStack {
+                ScrollView(showsIndicators: false){
+                    LazyVGrid(columns: colums, spacing: 0, pinnedViews: .sectionHeaders){
                         Section(header: sectionTitle(titleText: titleText) .font(.headline)) {
-                        ForEach(eventList){ event in
-                            HeroView(event: event)
-                                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                                .padding(.horizontal, 1)
-                                .padding(.vertical)
-                                .shadow(color: .white, radius: 1)
-                        }
+                            ForEach(eventRange[0]..<eventRange[1], id:\.self){ index in
+                                HeroView(event: eventSource.appleEventList[index])
+                                    .padding(.horizontal, 12)
+                                    .padding(.vertical)
+                                    .shadow(color: .white, radius: 1)
+                                    .onTapGesture {
+                                        withAnimation(.linear){
+                                            eventSource.selectedIndex = index
+                                            eventSource.showDetail.toggle()
+                                        }
+                                        // print("selected: \(index)")
+                                    }
+                            }
                             Color.clear
                                 .frame(height: 70)
+                        }
                     }
                 }
+                .padding(.bottom)
+                .zIndex(1)
+//                if showDetail {
+//                    VisualEffectView(uiVisualEffect: UIBlurEffect(style: .dark))
+//                        .edgesIgnoringSafeArea(.all)
+//                        .transition(.opacity)
+//                        .zIndex(2)
+//                }
             }
-            .padding(.bottom)
         }
         .ignoresSafeArea()
+        .sheet(isPresented: $eventSource.showDetail, content: {
+            EventDetailView(event: eventSource.appleEventList[eventSource.selectedIndex], showDetail: $eventSource.showDetail)
+        })
         .fullScreenCover(isPresented: $appStatus.toShowARModel){
-            ARModelView()
+            ARQuickLookView()
+                .environmentObject(appStatus)
         }
         .environmentObject(appStatus)
     }
@@ -61,9 +81,22 @@ struct SpecialEventView: View {
 
 struct SpecialEventView_Previews: PreviewProvider {
     static var previews: some View {
-        SpecialEventView(titleText: "WWDC", eventList: WWDCEventList)
+        HomeView()
+            .previewDevice("iPhone 14 Pro")
+            //.previewInterfaceOrientation(.landscapeLeft)
+            .preferredColorScheme(.dark)
         
-        SpecialEventView(titleText: "WWDC", eventList: WWDCEventList)
-            .previewDevice("iPhone 13 Pro")
+        HomeView()
+            .previewInterfaceOrientation(.landscapeLeft)
+            .preferredColorScheme(.dark)
+        
+        SpecialEventView(titleText: "WWDC", eventRange: [21, 32])
+            .environmentObject(EventSource())
+            .previewInterfaceOrientation(.landscapeLeft)
+        
+        SpecialEventView(titleText: "WWDC", eventRange: [21, 32])
+            .environmentObject(EventSource())
+            .previewDevice("iPhone 14 Pro")
+            .preferredColorScheme(.dark)
     }
 }

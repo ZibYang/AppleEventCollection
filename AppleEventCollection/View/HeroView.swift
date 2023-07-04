@@ -10,118 +10,35 @@ import SwiftUI
 
 struct HeroView: View{
     @EnvironmentObject var appStatus: AppStatus
-    @State private var showDetail = false
-    
     var event: AppleEvent
 
     var body: some View{
         ZStack(alignment: .bottomTrailing){
-            ZStack(alignment: .bottom){
-                ScrollView{
-                    VStack(alignment: .leading, spacing: 0){
-                        Image(event.thumbnail)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            
-                        if(showDetail){
-                            VStack(alignment: .leading){
-                                HStack {
-                                    Text(event.title)
-                                        .font(.title2)
-                                        .bold()
-                                        .foregroundStyle(.linearGradient(
-                                            colors: event.titleColorSet,
-                                            startPoint: event.tcStart, endPoint: event.tcEnd))
-                                }
-                                .padding(.bottom)
-                                
-                                Text(event.time)
-                                    .font(.headline)
-                                    .foregroundColor(.gray)
-                                
-                                Text(event.detail)
-                                    .foregroundColor(event.mainColor)
-                                    .lineLimit(2)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.trailing, event.modelName != "" ? 100 : 20)
-                                
-                                ForEach(0..<event.sectionTitle.count, id: \.self){i in
-                                    VStack(alignment: .leading){
-                                        Text(event.sectionTitle[i])
-                                            .font(.caption)
-                                            .foregroundColor(.gray.opacity(0.5))
-                                            .padding([.top, .leading])
-                                        VStack{
-                                            ForEach(event.bigAttachmentIndex[i]..<event.bigAttachmentIndex[i+1]){ j in
-                                                HStack(alignment: .top){
-                                                    Image(event.bigAttachmentList[j])
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(maxWidth: event.thumbnail.contains("ADA") ? 60 : 120,
-                                                               maxHeight: event.thumbnail.contains("ADA") ? 60 : 90, alignment: .leading)
-                                                        .cornerRadius(12)
-                                                    Text(event.bigAttachmentTitle[j])
-                                                        .font(.headline)
-                                                    Spacer()
-                                                }
-                                            }
-                                            
-                                            ScrollView(.horizontal, showsIndicators: false){
-                                                HStack{
-                                                    ForEach(event.smallAttachmentIndex[i]..<event.smallAttachmentIndex[i+1]){ j in
-                                                        VStack{
-                                                            Image(event.smallAttachmentList[j])
-                                                                .resizable()
-                                                                .frame(maxWidth: 40, maxHeight: 40)
-                                                            Text(event.smallAttachmentTitle[j])
-                                                                .font(.caption)
-                                                                .lineLimit(1)
-                                                        }
-                                                        .frame(width: 60)
-                                                    }
-                                                    Spacer()
-                                                }
-                                            }
-                                            .padding(.vertical)
-                                        }
-                                        .padding()
-                                        .mySectionModifier()
-                                    }
-                                }
-                            }
-                            .frame(maxHeight: .infinity, alignment: .bottomLeading)
-                            .padding()
-                        }
-                    }
-                    .background(.linearGradient(
-                        colors: event.backgroundColor,
-                        startPoint: event.bgcStart,
-                        endPoint: event.bgcEnd))
-                }
-                .frame(maxWidth: UIScreen.main.bounds.size.width - 2)
-            }
-            
+            Image(event.thumbnail)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                
             if( event.modelName != ""){
                 Image(systemName: "arkit")
                     .foregroundColor(event.mainColor)
                     .padding()
                     .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
-                    .padding(.trailing, showDetail ? 12 : 0)
-                    .padding(.bottom, showDetail ? 12 : 0)
+                    .padding(.trailing, 12)
+                    .padding(.bottom, 12)
                     .onTapGesture {
+                        print("going to show ARModel")
                         appStatus.pickedModelName = event.modelName
                         appStatus.pickedModelExtension = event.modelExtension
                         appStatus.checkModelExisted()
                     }
             }
         }
+        //.frame(maxHeight: showDetail ? 1000 : 300)
+        
+        //.border(.green, width: 5)
         .alert("Model: \(appStatus.pickedModelName).\(appStatus.pickedModelExtension) doesn't exist", isPresented: $appStatus.showErrorAlert){
             Button("OK", role: .cancel) { }
-        }
-        .onTapGesture {
-            withAnimation(.easeInOut){
-                showDetail.toggle()
-            }
         }
     }
     
@@ -147,6 +64,9 @@ extension View {
 
 struct HeroView_Previews: PreviewProvider {
     static var previews: some View {
+        HomeView()
+            .preferredColorScheme(.dark)
+        
         HeroView(
             event: AppleEvent(
                 time: "June, 2021",

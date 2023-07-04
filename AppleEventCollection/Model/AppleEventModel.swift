@@ -33,8 +33,11 @@ struct AppleEvent: Identifiable{
     var bigAttachmentIndex: [Int] = [0, 0]
     var bigAttachmentList: [String] = []
     var bigAttachmentTitle: [String] = []
+    var bigAttachmentID: [Int] = []
     
+    var smallSectionTitle: [String] = []
     var smallAttachmentIndex: [Int] = [0, 0]
     var smallAttachmentList: [String] = []
     var smallAttachmentTitle: [String] = []
+    var smallAttachmentID: [Int] = []
 }

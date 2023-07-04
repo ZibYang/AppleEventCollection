@@ -8,12 +8,19 @@
 
 import SwiftUI
 
-
 let WWDCEventList = [
+    AppleEvent(
+        time: "June 6, 2023",
+        title: "Code new worlds.",
+        detail: "Announcing Apple's biggest updates ever to iOS, iPadOS, watchOS — and what's more? Let's find out.",
+        thumbnail: "wwdc23_6_6",
+        modelName: "apple_event_23_6_6",
+        modelExtension: "usdz"
+    ),
     AppleEvent(
         time: "June 6, 2022",
         title: "Code one, code all.",
-        detail: "Announcing Apple's biggest updates ever to iOS, iPadOS, watchOS — and what's more? Let's find out.",
+        detail: "Announcing Apple's biggest updates ever to iOS 16, iPadOS 16, watchOS 9 and macOS Ventura. Also introduced the new MacBook Air and 13-inch MacBook Pro with M2 chip.",
         thumbnail: "wwdc22_6_6",
         modelName: "apple_event_en_",
         modelExtension: "usdz",

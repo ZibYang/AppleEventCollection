@@ -10,38 +10,38 @@ import SwiftUI
 
 struct HomeView: View {
     @State var showingPreview = false
-    
     @State var allowsScaling = false
-    
     @State var tabSelection = 0
+    @StateObject var eventSource = EventSource()
     
     var body: some View {
         TabView(selection: $tabSelection){
-            SpecialEventView(titleText: "Apple Event", eventList: appleEventList)
+            SpecialEventView(titleText: "Apple Event", eventRange: [0, 21])
                 .tabItem {
-                    Label("Event", systemImage: "e.square.fill")
+                    Label("Event", systemImage: "e.circle.fill")
                 }
                 .tag(0)
             
-            SpecialEventView(titleText: "WWDC", eventList: WWDCEventList)
+            SpecialEventView(titleText: "WWDC", eventRange: [21, 32])
                 .tabItem {
-                    Label("WWDC", systemImage: "w.square.fill")
+                    Label("WWDC", systemImage: "w.circle.fill")
                 }
                 .tag(1)
             
-            SpecialEventView(titleText: "Apple Design Award", eventList: ADAEventList)
+            SpecialEventView(titleText: "Apple Design Award", eventRange: [32, 39])
                 .tabItem {
-                    Label("ADA", systemImage: "a.square.fill")
+                    Label("ADA", systemImage: "a.circle.fill")
                 }
                 .tag(2)
             
-//            Text("TODO")
-//                .tabItem {
-//                    Label("Developer", systemImage: "d.square.fill")
-//                }
-//                .tag(3)
+            Text("TODO")
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape.circle")
+                }
+                .tag(3)
             
         }
+        .environmentObject(eventSource)
         .edgesIgnoringSafeArea(.all)
     }
 }
@@ -49,8 +49,10 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.dark)
         
         HomeView()
-            .previewDevice("iPhone 13 Pro")
+            .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+            .preferredColorScheme(.dark)
     }
 }

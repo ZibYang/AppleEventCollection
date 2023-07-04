@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A9D931C28B8D8D500BF05E5"
-               BuildableName = "Apple Event.app"
-               BlueprintName = "Apple Event"
-               ReferencedContainer = "container:Apple Event.xcodeproj">
+               BuildableName = "Special Event.app"
+               BlueprintName = "Special Event"
+               ReferencedContainer = "container:Special Event.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A9D931C28B8D8D500BF05E5"
-            BuildableName = "Apple Event.app"
-            BlueprintName = "Apple Event"
-            ReferencedContainer = "container:Apple Event.xcodeproj">
+            BuildableName = "Special Event.app"
+            BlueprintName = "Special Event"
+            ReferencedContainer = "container:Special Event.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A9D931C28B8D8D500BF05E5"
-            BuildableName = "Apple Event.app"
-            BlueprintName = "Apple Event"
-            ReferencedContainer = "container:Apple Event.xcodeproj">
+            BuildableName = "Special Event.app"
+            BlueprintName = "Special Event"
+            ReferencedContainer = "container:Special Event.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

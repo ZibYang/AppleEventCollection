@@ -14,7 +14,6 @@ struct CustomSectionModifer: ViewModifier {
             .background(.ultraThinMaterial)
             .overlay(RoundedRectangle(cornerRadius: 15, style: .continuous).stroke(Color.clear, lineWidth: 1).blendMode(.overlay))
             .mask(RoundedRectangle(cornerRadius: 15, style: .continuous))
-            //.padding(.horizontal)
     }
 }
 
